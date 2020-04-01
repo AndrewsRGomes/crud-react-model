@@ -1,0 +1,39 @@
+{
+  "etapas": [
+    {
+      "id": 1,
+      "id_processo": 1,
+      "etapa": "etapa_1",
+      "status": "pendente",
+      "dt_inicio": "2020-01-30",
+      "dt_fim": "",
+      "historico": ""
+    },
+    {
+        "id": 2,
+        "id_processo": 1,
+        "etapa": "etapa_2",
+        "status": "pendente",
+        "dt_inicio": "2020-01-30",
+        "dt_fim": "",
+        "historico": ""
+      },{
+        "id": 3,
+        "id_processo": 1,
+        "etapa": "etapa_3",
+        "status": "pendente",
+        "dt_inicio": "2020-01-30",
+        "dt_fim": "",
+        "historico": ""
+      },
+      {
+        "id": 4,
+        "id_processo": 1,
+        "etapa": "etapa_4",
+        "status": "pendente",
+        "dt_inicio": "2020-01-30",
+        "dt_fim": "",
+        "historico": ""
+      }
+  ]
+}

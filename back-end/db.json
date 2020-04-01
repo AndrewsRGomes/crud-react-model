@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 3,
+      "name": "Maria Julia da Silva",
+      "email": "123@empresa.com"
+    },
+    {
+      "name": "Andrews",
+      "email": "andrews@jcacontadores.com.br",
+      "id": 7
+    },
+    {
+      "name": "Thiago",
+      "email": "thiago@jcacontadores.com.br",
+      "id": 8
+    },
+    {
+      "name": "teste",
+      "email": "teste@teste.com.br",
+      "id": 9
+    },
+    {
+      "name": "teasdas",
+      "email": "marketing@jcacontadores.com.br",
+      "id": 10
+    }
+  ]
+}

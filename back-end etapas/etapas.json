@@ -1,0 +1,36 @@
+{
+  "etapas": [
+    {
+      "etapa": "etapa",
+      "status": "pendente",
+      "dt_inicio": "2020-03-30",
+      "dt_fim": "",
+      "detalhes": "",
+      "id": 1
+    },
+    {
+        "etapa": "etapa2",
+        "status": "pendente",
+        "dt_inicio": "2020-03-30",
+        "dt_fim": "",
+        "detalhes": "",
+        "id": 2
+      },
+      {
+        "etapa": "etapa3",
+        "status": "pendente",
+        "dt_inicio": "2020-03-30",
+        "dt_fim": "",
+        "detalhes": "",
+        "id": 3
+      },
+      {
+        "etapa": "etapa",
+        "status": "pendente",
+        "dt_inicio": "2020-03-30",
+        "dt_fim": "",
+        "detalhes": "",
+        "id": 4
+      }
+  ]
+}

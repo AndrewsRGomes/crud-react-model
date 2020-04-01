@@ -1,0 +1,17 @@
+
+.logo{
+    height:20px;
+    width:120
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    padding:10px;
+}
+
+a:hover{
+    text-decoration:none;
+    color:rgb(221, 216, 216);
+    padding:10px;
+}
