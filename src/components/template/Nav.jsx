@@ -1,15 +1,14 @@
 import './Nav.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/imgs/logo.png'
-
+// import Logo from '../../assets/imgs/logo.png'
 
 const Nav = () => {
     return (
         <navbar className="row navbar bg-primary">
-            <Link to="/home">
+            {/* <Link to="/home">
                 <img className="logo" src={Logo} alt="logo" />
-            </Link>
+            </Link> */}
             <Link to="/home">
                 <i className="fa fa-home"></i> Início
             </Link>

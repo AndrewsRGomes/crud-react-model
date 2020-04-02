@@ -41,7 +41,6 @@ const Orcamento = () => {
 
     const baseUrl = 'http://localhost:3004/orcamentos'
     
-    //Cabeçalho
     const headerProps = {
         icon: 'dollar-sign',
         title: 'Financeiro',
@@ -75,7 +74,6 @@ const Orcamento = () => {
 	const [ currentRow, setCurrentRow ] = useState(initialFormState)
 	const [ editing, setEditing ] = useState(false)
 
-	// CRUD operations
 	const addRow = row => {
 		row.id = rows.length + 1
 		setRow([ ...rows, row ])
@@ -85,11 +83,12 @@ const Orcamento = () => {
 		setRow(rows.filter(row => row.id !== id))
     }
 
-	const updateRow = (id, updatedUser) => { //update the line in the table
-		setRow(rows.map(row => (row.id === id ? updatedUser : row)))
-	}
+    const updateRow = (id, updatedUser) => { //update the line in the table
+        setRow(rows.map(row => (row.id === id ? updatedUser : row)))
+    }
 
     const populateFormWithSelectedRow = row => {
+        setEditing(true)
         setCurrentRow({ 
             id: row.id, 
             cliente: row.cliente, 
@@ -105,7 +104,7 @@ const Orcamento = () => {
 	return (
         <Main {...headerProps}>
             <div className="container">
-                <FormOrcamento editing={editing} setEditing={setEditing} currentRow={currentRow} updateRow={updateRow} addRow={addRow} />
+                <FormOrcamento editing={editing} initialFormState={initialFormState} setEditing={setEditing} currentRow={currentRow} updateRow={updateRow} addRow={addRow} />
                 <Tabela ths={ths} rows={rows} editRow={populateFormWithSelectedRow} deleteRow={deleteRow} />
             </div>
         </Main>

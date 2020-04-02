@@ -22,15 +22,15 @@ const AddRegisterForm = props => {
         setState({ ...state, [name]: value })
     }
     
-    function onSubmit(e, add = true){//activated when the user clicks the button on the form
-        e.preventDefault();
-        if(!add){
-            props.updateRow(row.id, row)
-        } else{
-            props.addRow(state)
-        }
-        setState(initialState)
+function onSubmit(e){//activated when the user clicks the button on the form
+    e.preventDefault();
+    if(props.setEditing){
+        props.updateRow(props.currentRow.id, state)
+    } else{
+        props.addRow(state)
     }
+    setState(initialState)
+}
 
     const selectStatus = [
         { optionValue : 'Pago'},
@@ -53,7 +53,7 @@ const AddRegisterForm = props => {
             <FormSelect label="Status" name="status" options={selectStatus} value={state.status} onChange={onChange} />
             <FormInput label="Email" name="email" type="email" value={state.email} onChange={onChange} />
             <FormTextArea label="Detalhes" name="detalhes" type="text" value={state.detalhes} onChange={onChange} />
-            <FormButton btnCancel btnEdit text="Salvar" onSubmit={onSubmit}/>
+            <FormButton btnCancel text="Salvar" onSubmit={onSubmit}/>
 		</form>
 	)
 }
