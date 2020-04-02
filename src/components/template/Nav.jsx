@@ -3,13 +3,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/imgs/logo.png'
 
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
 
 const Nav = () => {
     return (
-        <AppBar position="static">
-            <Toolbar>
+        <navbar className="row navbar bg-primary">
             <Link to="/home">
                 <img className="logo" src={Logo} alt="logo" />
             </Link>
@@ -28,8 +25,7 @@ const Nav = () => {
             <Link to="/">
                 <i class="fas fa-sign-out-alt"></i> Sair
             </Link>
-            </Toolbar>
-        </AppBar>
+      </navbar>
             
 
     )

@@ -25,12 +25,12 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const Routes = () => {
     return(
         <Switch>
-            <Route exact path='/' component={Orcamento} />
+            <Route exact path='/' component={Login} />
             <PrivateRoute path='/users' component={UserCrud} />
             <PrivateRoute path='/processos' component={ProcessosCrud} />
             <PrivateRoute exact path='/etapas-do-processo/:id'  component={EtapasProcesso} />
-            <PrivateRoute exact path='/orcamento'  component={Orcamento} />
-            <PrivateRoute exact path='/login'  component={Login} />
+            <PrivateRoute exact path='/orcamento' component={Orcamento} />
+            <PrivateRoute exact path='/login' component={Login} />
             <PrivateRoute path="/home" component={Home}/>
             <Redirect from='*' to="/login" />
         </Switch>
