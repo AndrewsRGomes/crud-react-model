@@ -2,14 +2,9 @@
 // Criar multiplos arquivos para as funções
 
 import React, { Component } from 'react'
+import Header from '../template/Header'
 import axios from 'axios'
 import Main from '../template/Main'
-
-const headerProps = {
-    icon: 'users',
-    title: 'Usuarios',
-    subtitle: 'Cadastro de usuários'
-}
 
 //Estados Iniciais das constantes
 const baseUrl = 'http://localhost:3002/users'
@@ -159,7 +154,8 @@ export default class UserCrud extends Component
     
     render() {
         return (
-            <Main {...headerProps}>
+            <Main>
+                <Header icon='users' title='Usuários' subtitle='Controle de Usuários' />
                 {this.renderForm()}
                 {this.renderTable()}
             </Main>

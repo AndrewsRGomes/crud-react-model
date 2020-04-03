@@ -4,12 +4,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Main from '../template/Main'
+import Header from '../template/Header'
 
-const headerProps = {
-    icon: 'book',
-    title: 'Processos',
-    subtitle: 'Legalização de Empresas'
-}
 
 //Estados Iniciais das constantes
 const baseUrl = 'http://localhost:3002/processos'
@@ -172,11 +168,11 @@ export default class ProcessosCrud extends Component  {
             )
         })
     }
-   
     
     render() {
         return (
-            <Main {...headerProps}>
+            <Main>
+                <Header icon='book' title='Processos' subtitle='Legalização de Empresas' />
                 {this.renderForm()}
                 {this.renderTable()}
             </Main>

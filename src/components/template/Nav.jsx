@@ -10,7 +10,7 @@ const Nav = () => {
                 <img className="logo" src={Logo} alt="logo" />
             </Link> */}
             <Link to="/home">
-                <i className="fa fa-home"></i> Início
+                <i className="fa fa-home"></i>
             </Link>
             <Link to="/users">
                 <i className="fa fa-users"></i> Usuários
@@ -21,9 +21,7 @@ const Nav = () => {
             <Link to="/orcamento">
                 <i className="fa fa-dollar-sign"></i> Orcamento
             </Link>
-            <Link to="/">
-                <i class="fas fa-sign-out-alt"></i> Sair
-            </Link>
+            
       </navbar>
             
 

@@ -26,7 +26,7 @@ const Tabela = props => (
             <td>{row.valor}</td>
             <td>{row.taxa}</td>
             <td>{row.status}</td>
-            <td>
+            <td className="text-nowrap text-center">
               <button
                 onClick={() => { props.editRow(row) }} className="btn btn-sm btn-warning mr-2" >
                 <i class="fas fa-edit"></i>

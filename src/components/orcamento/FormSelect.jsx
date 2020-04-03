@@ -2,7 +2,7 @@ import React from 'react'
 
 // import BInput from './BInput'
 
-const FormButton = (props) => 
+const FormSelect = (props) => 
 {
     console.log(props)
     return(
@@ -22,4 +22,4 @@ const FormButton = (props) =>
         </div>
     )
 }
-export default FormButton
+export default FormSelect

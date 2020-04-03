@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default props =>
-    <header className="col-md-8 offset-md-2">
+    <header>
         <h1 className="mt-3">
             <i className={`fa fa-${props.icon}`}></i> {props.title}
         </h1>

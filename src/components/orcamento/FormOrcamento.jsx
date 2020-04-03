@@ -7,7 +7,6 @@ const AddRegisterForm = props => {
 
     const initialState = { id: null,  cliente: '', processo: '',valor: '',taxa: '',status: '',email: '',detalhes: '' }
     const [ state, setState ] = useState(initialState)
-    const [ row, setRow ] = useState(props.currentRow)//veio do editar
     
     useEffect(//veio do editar
         () => {
@@ -50,7 +49,10 @@ function onSubmit(e){//activated when the user clicks the button on the form
             <FormSelect label="Processos" name="processo" options={selectProcessos} value={state.processo} onChange={onChange} />
             <FormInput label="Valor" name="valor" type="text" value={state.valor} onChange={onChange} />
             <FormInput label="Taxa" name="taxa" type="text" value={state.taxa} onChange={onChange} />
+           
             <FormSelect label="Status" name="status" options={selectStatus} value={state.status} onChange={onChange} />
+           
+           
             <FormInput label="Email" name="email" type="email" value={state.email} onChange={onChange} />
             <FormTextArea label="Detalhes" name="detalhes" type="text" value={state.detalhes} onChange={onChange} />
             <FormButton btnCancel text="Salvar" onSubmit={onSubmit}/>
